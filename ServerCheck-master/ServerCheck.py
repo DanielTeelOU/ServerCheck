@@ -1,9 +1,9 @@
-while True:
-
+while True: #allows for the restart of the program without exiting and manually executing again
+#-----------------------------------------------------------------------------------------------
     import os #to navigate the file system
     import sys #to save output as txt
     from pathlib import Path #to show the file path
-
+#------------------------------------------------------------------------------------------------
     #goes through the machine's entire directory and prints it in a hierarchy layout
     def list_files(startpath):
         for root, dirs, files in os.walk(startpath):
@@ -44,7 +44,7 @@ while True:
         my_file = script_location / 'filename'
         print(my_file)
     
-    #main method
+    #main method------------------------------------------------------------------------------------------------------------------
     def main():
         choice = input("What do you want to run?\nc - capture\nl - list files\ns - check two servers directory logs\nx - quit\n")
         if choice == 'c':
@@ -65,9 +65,9 @@ while True:
                 print("The file can be found at" + pathFinder('results.txt') + "for later viewing.")
         if choice == 'x':
             exit
-
+    #initialize the program
     main()
-
+#-------------------------------------------------------------------------------------------------------
     while True:
         answer = input('Would you like to return to the menu? (y/n): \n')
         if answer in ('y', 'n'):

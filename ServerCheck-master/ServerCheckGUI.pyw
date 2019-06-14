@@ -4,14 +4,14 @@ import sys
 import tkinter
 import subprocess
 #from ServerCheck import list_files, redirect_to_file1, redirect_to_file2, compare
-#Window and header
+#Window and header-----------------------------------------------------------------
 window = tkinter.Tk()
 window.geometry("502x320")
 window.title("ServerCheck GUI")
 window.configure(background="black")
 window.resizable(width=False, height=False)
 
-#functions
+#functions--------------------------------------------------------------------------
 def list_files():
     for root, dirs, files in os.walk('C:\\'):
         level = root.replace('C://', '').count(os.sep)
@@ -46,12 +46,15 @@ def redirect_to_file2():
     list_files()
     sys.stdout = original
 
+#opens results text file
 def openUp():
     os.system('results.txt')
 
+#opens the log for the first log
 def openfile1():
     os.system('output1.txt')
 
+#opens the log for the second log
 def openfile2():
     os.system('output2.txt')
 
@@ -60,7 +63,7 @@ l = Label(window, text="ServerCheck",bg="grey", fg="black", font="magneto 27", r
 l.place(x=1, y=1)
 
 
-#buttons
+#buttons-------------------------------------------------------------------------------------------------------------------------------------------------------
 b1 = Button(window, text="Capture log for old system.", bg="black", fg="white", relief=RAISED, width=45, height=1,command=redirect_to_file1) 
 b1.place(x=90, y=105)
 b2 = Button(window, text="View the log file for the old system.", bg="black", fg="white", width=45, height=1, relief=RAISED,  command=openfile1)
@@ -76,5 +79,5 @@ b6.place(x=90, y=275)
 
 
 
-#run the program
+#run the program---------------------------------------------------------------------------------------------------------------------------------------------------
 window.mainloop()
