@@ -9,7 +9,7 @@ import subprocess
 
 #Window and header-----------------------------------------------------------------
 window = tkinter.Tk()
-window.iconbitmap(r'C:/Users/DanielT/Desktop/ServerCheck-BackUp/ServerCheck-master/TermIcon.ico')
+window.iconbitmap(r'C:/Users/DanielT/Desktop/ServerCheck-BackUp/ServerCheckGUI/TermIcon.ico')
 window.geometry("373x410")
 window.title("Server Check")
 window.configure(background="black")
@@ -61,9 +61,6 @@ def openfile1():
 #opens the log for the second log
 def openfile2():
     os.system('output2.txt')
-
-def onPress():
-    
 
 #label--------------------------------------------------------------------------------------------------------------------------------------------------------
 l = Label(window, text="ServerCheck", bg="gray20", fg="black", font="magneto 26", relief=GROOVE , width=14, height=2)
