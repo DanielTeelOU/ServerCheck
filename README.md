@@ -1,3 +1,4 @@
 # ServerCheck
-Creates file with a system's directory tree and allows you to compare it with another to ensure all files were transferred over.
-There is an .exe verion for the fully packaged app. The .pyw version incorporates the GUI and the .py version runs in the terminal.
+Checks the directory structure of a new machine with that of an old one to ensure that all items have been transferred.
+For use in a hard drive transfer or server transfer.
+The .py version runs in terminal and the .pyw version has a working GUI.
