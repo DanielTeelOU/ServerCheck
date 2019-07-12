@@ -9,7 +9,7 @@ import subprocess
 
 #Window and header-----------------------------------------------------------------
 window = tkinter.Tk()
-window.iconbitmap(r'C:/Users/DanielT/Desktop/ServerCheck-BackUp/ServerCheckGUI/TermIcon.ico')
+window.iconbitmap(r'C:/Dev/ServerCheck/ServerCheck-BackUp/ServerCheck-master/TermIcon.ico')
 window.geometry("373x410")
 window.title("Server Check")
 window.configure(background="black")
